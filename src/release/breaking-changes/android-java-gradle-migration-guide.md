@@ -61,7 +61,7 @@ as follows:
 
    ![Dialog prompting you to upgrade Gradle]({{site.url}}/assets/images/docs/releaseguide/android-studio-flamingo-upgrade-alert.png){:width="50%"}
 
-   Update to a Gradle release between 7.3 through 7.6.1, inclusive.
+   Update to a Gradle release between 7.3 through 8.3, inclusive.
 
 1. Follow the guided workflow to update Gradle.
 
@@ -77,12 +77,12 @@ Do the following from the top of your Flutter project.
    $ cd android
    ```
 
-1. Update Gradle to the preferred version. Choose between 7.3 through 7.6.1, inclusive.
+1. Update Gradle to the preferred version. Choose between 7.3 through 8.3, inclusive.
 
    ```terminal
-   $ ./gradlew wrapper --gradle-version=7.6.1
+   $ ./gradlew wrapper --gradle-version=8.3
    ```
-
+For more information regarding compatibility, refer ![Workflow to upgrade Gradle](https://docs.gradle.org/current/userguide/compatibility.html){:width="85%"} 
 ## Notes
 
 A few notes to be aware of:
@@ -113,8 +113,8 @@ A few notes to be aware of:
   Android file structure, such as
   [splitting out ApplicationId from PackageName][].
   If this occurs, downgrade to a release of Gradle
-  between 7.3 and 7.6.1, inclusive.
-* Upgrading to Flutter 3.10 won't fix this issue.
+  between 7.3 and 8.3, inclusive.
+* Upgrading to Flutter 3.13 won't fix this issue.
 
 [deprecated Gradle classes]: https://docs.gradle.org/7.6/javadoc/deprecated-list.html
 [issue 122609]: {{site.github}}/flutter/flutter/issues/122609
